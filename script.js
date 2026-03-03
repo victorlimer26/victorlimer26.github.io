@@ -19,20 +19,15 @@ if (navToggle && navMenu) {
 
 // ===== Navbar Scroll Effect =====
 const navbar = document.getElementById('navbar');
-let lastScrollY = 0;
 
 window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
-
   if (navbar) {
-    if (currentScrollY > 50) {
+    if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
   }
-
-  lastScrollY = currentScrollY;
 });
 
 // ===== Active Navigation Link =====
