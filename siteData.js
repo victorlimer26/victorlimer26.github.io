@@ -116,4 +116,9 @@ const SITE_DATA = {
   footer: {
     tagline: "Building digital experiences with passion and precision.",
   },
+
+  // ── Visual Settings ──────────────────────────────────────
+  particles: {
+    count: 40,
+  },
 };
