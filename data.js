@@ -16,7 +16,7 @@ const DATA = {
 
     // ===== INFORMASI UMUM =====
     name: "Ahmad Azhar",
-    logo: "ZHARCompany",
+    logo: "Ahmad Azhar",
     tagline: "Full-Stack Developer & UI/UX Designer",
     heroDescription: "Saya adalah seorang developer yang passionate dalam menciptakan pengalaman digital yang luar biasa. Fokus pada kode yang bersih, desain yang elegan, dan solusi yang inovatif.",
 
