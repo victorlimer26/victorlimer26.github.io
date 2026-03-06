@@ -1,27 +1,54 @@
-# rachmatghaly.dev | Portofolio Project
+# Ahmad Azhar — Portfolio
 
-🎉 Welcome to my portofolio website, In this website I will be writing some blogs and showcase my projects. I believe that writing what I have learned is the best way to remember things, and I can share my knowledge along the way. So do contact me and I will be very happy to help!
+Portfolio website modern yang di-hosting di GitHub Pages.
 
-## 🖥️ Preview
+## 🚀 Deploy ke GitHub Pages
 
-[https://www.rachmatghaly.com](https://rachmatghaly.vercel.app/)
+1. Push repository ini ke GitHub
+2. Buka **Settings** → **Pages**
+3. Pilih **Branch: main** → **/ (root)** → **Save**
+4. Website akan live di `https://username.github.io/nama-repo`
 
-## 🛠️ Tech Stack & Tools
+## ✏️ Cara Edit Data
 
-The table below gives an overview of the technologies used in this project, as well as places to learn more about them.
+Semua data portfolio ada di **satu file terpisah**: `data.js`
 
-| Name            | Links                                                                                                                                                                                                           |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Next.js         | [Website](https://nextjs.org/) - [Docs](https://nextjs.org/docs) - [Learn Next.js](https://nextjs.org/learn) - [GitHub](https://github.com/vercel/next.js) - [Wikipedia](https://en.wikipedia.org/wiki/Next.js) |
-| React           | [Website](https://reactjs.org/) - [Docs](https://reactjs.org/docs/getting-started.html) - [GitHub](https://github.com/facebook/react) - [Wikipedia](<https://en.wikipedia.org/wiki/React_(JavaScript_library)>) |
-| TypeScript      | [Website](https://www.typescriptlang.org/) - [Docs](https://www.typescriptlang.org/docs/) - [GitHub](https://github.com/microsoft/TypeScript) - [Wikipedia](https://en.wikipedia.org/wiki/TypeScript)           |
-| Tailwind CSS    | [Website](https://tailwindcss.com/) - [Docs](https://tailwindcss.com/docs) - [GitHub](https://github.com/tailwindlabs/tailwindcss)                                                                              |
-| Framer Motion   | [Website](https://www.framer.com/motion/) - [Docs](https://www.framer.com/docs/) - [GitHub](https://github.com/framer/motion)                                                                                   |
-| React Hook Form | [Website](https://react-hook-form.com/) - [Docs](https://react-hook-form.com/get-started) - [GitHub](https://github.com/react-hook-form/react-hook-form)                                                        |
-| React Query     | [Website](https://tanstack.com/query/latest) - [Docs](https://tanstack.com/query/latest/docs/react/overview) - [GitHub](https://github.com/tanstack/query)                                                      |
-| React Icons     | [Website](https://react-icons.github.io/react-icons/) - [GitHub](https://github.com/react-icons/react-icons)                                                                                                    |
-| ESLint          | [Website](https://eslint.org/) - [Configuration](https://eslint.org/docs/user-guide/configuring/) - [Rules](https://eslint.org/docs/rules/) - [GitHub](https://github.com/eslint/eslint)                        |
-| Prettier        | [Website](https://prettier.io/) - [Docs](https://prettier.io/docs/en/index.html) - [Options](https://prettier.io/docs/en/options.html) - [GitHub](https://github.com/prettier/prettier)                         |
-| Yarn            | [Website](https://yarnpkg.com/) - [CLI Docs](https://yarnpkg.com/cli) - [GitHub](https://github.com/yarnpkg/berry)                                                                                              |
-| GitHub Actions  | [Website](https://github.com/features/actions) - [Docs](https://docs.github.com/en/actions) - [Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)                |
-| Vercel          | [Website](https://vercel.com/) - [Docs](https://vercel.com/docs) - [CLI Docs](https://vercel.com/docs/cli)                                                                                                      |
+Buka file tersebut lalu edit sesuai kebutuhan — **tidak perlu sentuh `index.html`**:
+
+| Data | Lokasi di DATA |
+|------|---------------|
+| Nama & tagline | `name`, `tagline` |
+| Deskripsi hero | `heroDescription` |
+| Foto profil | `heroPhoto` (contoh: `"images/foto.jpg"`) |
+| Statistik | `stats` |
+| Tentang saya | `about.paragraphs`, `about.info` |
+| Layanan/bisnis | `businesses` |
+| Skills | `skillCategories` |
+| Project | `projects` |
+| Kontak | `contact` |
+| Social media | `socials` |
+
+## 🖼️ Cara Tambah Gambar
+
+1. Taruh file gambar di folder `images/`
+2. Di `data.js`, isi path gambar: `"images/nama-file.jpg"`
+3. Format yang didukung: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.svg`, `.avif`
+
+## 📁 Struktur
+
+```
+├── index.html      ← Template & engine (jangan diedit)
+├── data.js         ← ⭐ Edit data portfolio di sini!
+├── images/         ← Folder untuk gambar
+│   ├── foto.jpg
+│   ├── project1.jpg
+│   └── ...
+└── README.md
+```
+
+## 📝 Form Kontak
+
+Untuk mengaktifkan form kontak:
+1. Daftar di [Formspree](https://formspree.io) (gratis)
+2. Buat form baru, copy ID-nya
+3. Di `data.js`, ganti `YOUR_FORM_ID` di `contact.formAction`
