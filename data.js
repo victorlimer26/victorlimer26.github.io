@@ -22,7 +22,7 @@ const DATA = {
 
     // Foto profil hero (taruh file di folder images/)
     // Kosongkan "" jika belum ada foto, akan tampil icon default
-    heroPhoto: "images/IMG_6789.jpeg",
+    heroPhoto: "images/IMG_0769.jpeg",
 
     // ===== HERO STATISTICS =====
     stats: [
