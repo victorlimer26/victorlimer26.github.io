@@ -141,7 +141,7 @@ const DATA = {
             // longDescription: penjelasan detail project (opsional, tampil di halaman detail)
             longDescription: "Platform e-commerce full-stack dengan fitur keranjang belanja, pembayaran online terintegrasi, dashboard admin untuk manajemen produk, dan tracking order real-time. Dibangun dengan React untuk frontend yang responsif, Node.js untuk backend yang scalable, dan MongoDB untuk penyimpanan data yang fleksibel. Project ini mendukung multi-payment gateway, notifikasi email otomatis, dan sistem review produk.",
             images: [
-                "images/inhilapp.png"
+                "images/inhilapp.png",
                 "images/Blue Modern Mobile Application Presentation.png",
             ],
             tags: ["nextjs", "laravel", "MySql"],
