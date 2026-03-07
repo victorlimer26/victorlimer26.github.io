@@ -232,74 +232,75 @@ img { display: block; max-width: 100%; }
 @keyframes float3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
 /* ─── ABOUT ─── */
-.about-layout { display: flex; flex-direction: column; gap: 48px; }
-.about-top { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: center; }
+.about-layout { display: flex; flex-direction: column; gap: 40px; }
+.about-top { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
 .about-img {
-    aspect-ratio: 1/1; border-radius: 20px; overflow: hidden;
+    aspect-ratio: 1/1; border-radius: 16px; overflow: hidden;
     background: var(--bg-card); border: 1px solid var(--border);
     display: flex; align-items: center; justify-content: center;
     font-size: 3rem; color: var(--text-sub); position: relative;
 }
 .about-img img { width: 100%; height: 100%; object-fit: cover; }
 .about-img::after {
-    content: ''; position: absolute; inset: 0; border-radius: 20px;
-    border: 1px solid rgba(251,252,5,0.1); pointer-events: none;
+    content: ''; position: absolute; inset: 0; border-radius: 16px;
+    border: 1px solid rgba(251,252,5,0.08); pointer-events: none;
 }
-.about-text p { color: var(--text-sub); margin-bottom: 14px; font-size: 0.95rem; line-height: 1.75; }
-.about-cards {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+.about-text p { color: var(--text-sub); margin-bottom: 12px; font-size: 0.92rem; line-height: 1.8; }
+.about-text p:last-child { margin-bottom: 0; }
+.about-info-list {
+    display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 20px;
+    padding-top: 20px; border-top: 1px solid var(--border);
 }
-.about-card {
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 20px; text-align: center; transition: border-color 0.2s;
+.about-info-item {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.85rem; color: var(--text-sub);
 }
-.about-card:hover { border-color: rgba(251,252,5,0.4); box-shadow: var(--card-hover-shadow); }
-.about-card .ac-icon { font-size: 1.2rem; color: var(--primary); margin-bottom: 8px; }
-.about-card .ac-label { font-size: 0.68rem; color: var(--text-sub); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.about-card .ac-value { font-weight: 600; color: var(--text); font-size: 0.9rem; }
+.about-info-item i {
+    color: var(--primary); font-size: 0.85rem; width: 16px; text-align: center;
+}
+.about-info-item .info-label { color: var(--text-sub); margin-right: 2px; }
+.about-info-item .info-label::after { content: ':'; }
+.about-info-item .info-val { color: var(--text); font-weight: 500; }
 
 /* ─── BUSINESS ─── */
 .biz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
 .biz-card {
     background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 0; overflow: hidden; transition: border-color 0.2s, transform 0.3s;
+    padding: 28px; transition: border-color 0.2s, transform 0.3s;
 }
-.biz-card:hover { border-color: rgba(251,252,5,0.4); transform: translateY(-6px); box-shadow: var(--card-hover-shadow); }
-.biz-header {
-    padding: 24px 24px 16px;
-    background: linear-gradient(135deg, rgba(251,252,5,0.06) 0%, transparent 60%);
-    border-bottom: 1px solid var(--border);
-    display: flex; align-items: center; gap: 14px;
+.biz-card:hover { border-color: rgba(251,252,5,0.3); transform: translateY(-4px); box-shadow: var(--card-hover-shadow); }
+.biz-top {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 18px;
 }
 .biz-logo {
-    width: 52px; height: 52px; border-radius: 14px; overflow: hidden;
+    width: 44px; height: 44px; border-radius: 10px; overflow: hidden;
     background: var(--bg-input); display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; font-size: 1.3rem; color: var(--primary);
+    flex-shrink: 0; font-size: 1.1rem; color: var(--primary);
     border: 1px solid var(--border);
 }
 .biz-logo img { width: 100%; height: 100%; object-fit: cover; }
-.biz-name { font-weight: 700; font-size: 1.05rem; }
+.biz-name { font-weight: 600; font-size: 1rem; }
 .biz-handle { font-size: 0.78rem; color: var(--primary); font-weight: 500; }
-.biz-body { padding: 20px 24px 24px; }
-.biz-desc { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 16px; line-height: 1.6; }
-.biz-features { list-style: none; margin-bottom: 20px; }
+.biz-desc { color: var(--text-sub); font-size: 0.88rem; margin-bottom: 16px; line-height: 1.65; }
+.biz-features { list-style: none; margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 6px; }
 .biz-features li {
-    font-size: 0.84rem; color: var(--text-sub); padding: 5px 0;
-    display: flex; align-items: center; gap: 10px;
+    font-size: 0.78rem; color: var(--text-sub); padding: 4px 10px;
+    background: var(--bg-input); border-radius: 6px; border: 1px solid var(--border);
 }
-.biz-features li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
 .biz-bottom {
     display: flex; align-items: center; justify-content: space-between;
     padding-top: 16px; border-top: 1px solid var(--border);
 }
-.biz-price { font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+.biz-price { font-size: 0.82rem; font-weight: 600; color: var(--primary); }
 .biz-link {
     display: inline-flex; align-items: center; gap: 6px;
-    font-size: 0.82rem; font-weight: 600; color: var(--bg);
-    background: var(--primary); padding: 8px 16px; border-radius: 8px;
+    font-size: 0.8rem; font-weight: 600; color: var(--primary);
+    padding: 6px 14px; border-radius: 8px;
+    border: 1px solid rgba(251,252,5,0.3);
+    background: transparent;
     transition: 0.2s;
 }
-.biz-link:hover { background: var(--primary-hover); transform: translateY(-1px); }
+.biz-link:hover { background: var(--primary); color: var(--bg); border-color: var(--primary); }
 
 /* ─── SKILLS ─── */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
@@ -542,8 +543,8 @@ img { display: block; max-width: 100%; }
     .hero-decor { display: none; }
 
     .about-top { grid-template-columns: 1fr; gap: 32px; }
-    .about-img { max-width: 260px; margin: 0 auto; }
-    .about-cards { grid-template-columns: 1fr 1fr; }
+    .about-img { max-width: 220px; margin: 0 auto; }
+    .about-info-list { gap: 10px 24px; }
 
     .contact-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
@@ -563,7 +564,7 @@ img { display: block; max-width: 100%; }
     .stat-item { padding: 14px 8px; }
     .stat-num { font-size: 1.3rem; }
     .biz-grid, .skills-grid, .projects-grid { grid-template-columns: 1fr; }
-    .about-cards { grid-template-columns: 1fr; }
+    .about-info-list { flex-direction: column; gap: 8px; }
     .btn { padding: 10px 20px; font-size: 0.85rem; }
     .pd-title { font-size: 1.4rem; }
 }
@@ -709,14 +710,14 @@ function render(){
                 <div class="about-img fade-left">${aboutImg}</div>
                 <div class="about-text fade-right">
                     ${aboutParas.map(p=>`<p>${esc(p)}</p>`).join('')}
+                    <div class="about-info-list">
+                        ${aboutInfo.map((i,idx)=>`<div class="about-info-item">
+                            <i class="${aboutIcons[idx]||'fa-solid fa-circle-info'}"></i>
+                            <span class="info-label">${esc(i.label)}</span>
+                            <span class="info-val">${esc(i.value)}</span>
+                        </div>`).join('')}
+                    </div>
                 </div>
-            </div>
-            <div class="about-cards stagger">
-                ${aboutInfo.map((i,idx)=>`<div class="about-card fade">
-                    <div class="ac-icon"><i class="${aboutIcons[idx]||'fa-solid fa-circle-info'}"></i></div>
-                    <div class="ac-label">${esc(i.label)}</div>
-                    <div class="ac-value">${esc(i.value)}</div>
-                </div>`).join('')}
             </div>
         </div>`;
 
@@ -732,20 +733,18 @@ function render(){
                 const logoHTML = logo ? `<img src="${esc(logo)}" alt="${esc(b.title)}">` : `<i class="${esc(b.icon||'fa-solid fa-store')}"></i>`;
                 const ig = b.instagram ? safeURL(b.instagram) : '#';
                 return `<div class="biz-card fade">
-                    <div class="biz-header">
+                    <div class="biz-top">
                         <div class="biz-logo">${logoHTML}</div>
                         <div>
                             <div class="biz-name">${esc(b.title)}</div>
                             ${b.igHandle?`<div class="biz-handle">${esc(b.igHandle)}</div>`:''}
                         </div>
                     </div>
-                    <div class="biz-body">
-                        <p class="biz-desc">${esc(b.description)}</p>
-                        ${b.features&&b.features.length?`<ul class="biz-features">${b.features.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}
-                        <div class="biz-bottom">
-                            ${b.price?`<div class="biz-price">${esc(b.price)}</div>`:''}
-                            ${b.instagram?`<a href="${ig}" target="_blank" rel="noopener noreferrer" class="biz-link"><i class="fa-brands fa-instagram"></i> ${t('bizVisit')}</a>`:''}
-                        </div>
+                    <p class="biz-desc">${esc(b.description)}</p>
+                    ${b.features&&b.features.length?`<ul class="biz-features">${b.features.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}
+                    <div class="biz-bottom">
+                        ${b.price?`<div class="biz-price">${esc(b.price)}</div>`:''}
+                        ${b.instagram?`<a href="${ig}" target="_blank" rel="noopener noreferrer" class="biz-link"><i class="fa-brands fa-instagram"></i> ${t('bizVisit')}</a>`:''}
                     </div>
                 </div>`;
             }).join('')}
