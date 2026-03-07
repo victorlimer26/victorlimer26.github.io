@@ -22,13 +22,12 @@ const DATA = {
 
     // Foto profil hero (taruh file di folder images/)
     // Kosongkan "" jika belum ada foto, akan tampil icon default
-    heroPhoto: "images/IMG_0769.jpeg",
+    heroPhoto: "images/foto.png",
 
     // ===== HERO STATISTICS =====
     stats: [
         { number: "3+", label: "Tahun Experience" },
         { number: "25+", label: "Project Selesai" },
-        { number: "15+", label: "Client Happy" },
     ],
 
     // ===== NAVIGASI (jangan ubah href kecuali ubah id section) =====
@@ -53,7 +52,7 @@ const DATA = {
         info: [
             { label: "Nama", value: "Ahmad Azhar" },
             { label: "Lokasi", value: "Indonesia" },
-            { label: "Email", value: "ahmadazhar@gmail.com" },
+            { label: "Email", value: "ahmadazhar855@gmail.com" },
             { label: "Status", value: "Freelancer" },
         ]
     },
@@ -64,7 +63,7 @@ const DATA = {
 
     businesses: [
         {
-            logo: "",                // taruh: images/logo-brand1.png
+            logo: "images/image.png",                // taruh: images/logo-brand1.png
             icon: "fa-solid fa-shirt",  // icon fallback jika logo kosong
             title: "THEJUBEL",
             igHandle: "@thejubel_ml",
@@ -77,13 +76,13 @@ const DATA = {
             ]
         },
         {
-            logo: "",                // taruh: images/logo-brand2.png
+            logo: "images/foto.png",                // taruh: images/logo-brand2.png
             icon: "fa-solid fa-mug-hot",
             title: "Kopi Azhar",
             igHandle: "@kopi.azhar",
             instagram: "https://instagram.com/kopi.azhar",
             description: "Kopi specialty roasted fresh dengan biji pilihan dari berbagai daerah di Indonesia.",
-            price: "Mulai dari Rp 35.000",
+            price: "Mulai dari Rp 35.0",
             features: [
                 "Single Origin",
                 "Fresh Roasted",
@@ -153,16 +152,17 @@ const DATA = {
     // Taruh gambar di folder images/ lalu isi path-nya
     projects: [
         {
-            title: "E-Commerce Pebjualan App Premium",
-            description: "Platform e-commerce full-stack dengan fitur keranjang belanja, pembayaran, dan dashboard admin.",
+            title: "E-Commerce InhilApp",
+            description: "Platform e-commerce penjualan app premium dengan fitur keranjang belanja, pembayaran, dan dashboard admin.",
+            // longDescription: penjelasan detail project (opsional, tampil di halaman detail)
+            longDescription: "Platform e-commerce full-stack dengan fitur keranjang belanja, pembayaran online terintegrasi, dashboard admin untuk manajemen produk, dan tracking order real-time. Dibangun dengan React untuk frontend yang responsif, Node.js untuk backend yang scalable, dan MongoDB untuk penyimpanan data yang fleksibel. Project ini mendukung multi-payment gateway, notifikasi email otomatis, dan sistem review produk.",
             images: [
                 "images/inhilapp.png",
-                "images/inhilapp2.png",
-                "images/inhilapp3.png",
-                "images/inhilapp4.png",
+                // "images/project1-3.jpg",
             ],
-            tags: ["Nextjs", "Laravel", "MySql"],
+            tags: ["React", "Node.js", "MongoDB"],
             liveUrl: "https://inhilapp.vercel.app",
+            githubUrl: "#",
         },
         {
             title: "Task Management App",
@@ -212,20 +212,21 @@ const DATA = {
     // ===== CONTACT =====
     contact: {
         description: "Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi!",
-        email: "ahmad@example.com",
-        phone: "+62 812 3456 7890",
-        location: "Jakarta, Indonesia",
+        email: "ahmadazhar855@gmail.com",
+        phone: "+6282279082064",
+        location: "Indragiri Hilir, Riau, Indonesia",
         // Form action - gunakan Formspree, Getform, dll untuk handling form
         // Daftar gratis di https://formspree.io lalu ganti link di bawah
-        formAction: "https://formspree.io/f/YOUR_FORM_ID",
+        formAction: "https://formspree.io/f/mgonvekk",
     },
 
     // ===== SOCIAL MEDIA =====
     socials: [
-        { icon: "fa-brands fa-github", url: "https://github.com/azhar85", label: "GitHub" },
-        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmdzhaar", label: "Instagram" },
-        { icon: "fa-brands fa-x", url: "https://x.com/ahmdzhaar", label: "x" },
-        { icon: "fa-brands fa-threads", url: "https://threads.net/ahmdzhaar", label: "Threads" },
+        { icon: "fa-brands fa-github", url: "https://github.com/ahmadazhar", label: "GitHub" },
+        { icon: "fa-brands fa-linkedin-in", url: "https://linkedin.com/in/ahmadazhar", label: "LinkedIn" },
+        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
+        { icon: "fa-brands fa-twitter", url: "https://twitter.com/ahmadazhar", label: "Twitter" },
+        { icon: "fa-brands fa-dribbble", url: "https://dribbble.com/ahmadazhar", label: "Dribbble" },
     ],
 
     // ===== FOOTER =====
@@ -240,7 +241,6 @@ const DATA = {
         stats: [
             { number: "3+", label: "Years Experience" },
             { number: "25+", label: "Projects Done" },
-            { number: "15+", label: "Happy Clients" },
         ],
         aboutParagraphs: [
             "Hello! I'm Ahmad Azhar, a Full-Stack Developer based in Indonesia. I have over 3 years of experience in developing modern and scalable web and mobile applications.",
@@ -250,7 +250,7 @@ const DATA = {
         aboutInfo: [
             { label: "Name", value: "Ahmad Azhar" },
             { label: "Location", value: "Indonesia" },
-            { label: "Email", value: "ahmad@example.com" },
+            { label: "Email", value: "ahmadazhar855@gmail.com" },
             { label: "Status", value: "Freelancer" },
         ],
         businessSubtitle: "Businesses I manage and develop on Instagram.",
