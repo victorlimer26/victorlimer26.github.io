@@ -48,12 +48,6 @@ const DATA = {
             "Saya percaya bahwa teknologi terbaik adalah yang tidak terlihat — yang bekerja dengan mulus dan memberikan pengalaman terbaik bagi penggunanya. Itulah mengapa saya selalu mengutamakan clean code, performa optimal, dan desain yang intuitif.",
             "Ketika tidak coding, saya biasanya exploring teknologi baru, menulis artikel tech, atau menikmati secangkir kopi sambil brainstorming ide project berikutnya."
         ],
-        info: [
-            { label: "Nama", value: "Ahmad Azhar" },
-            { label: "Lokasi", value: "Indonesia" },
-            { label: "Email", value: "ahmadazhar855@gmail.com" },
-            { label: "Status", value: "Freelancer" },
-        ]
     },
 
     // ===== BUSINESS / USAHA (Instagram-based) =====
@@ -173,7 +167,7 @@ const DATA = {
     contact: {
         description: "Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi!",
         email: "ahmadazhar855@gmail.com",
-        whatsapp: "+6282279082064",
+        whatsapp: "082279082064",
         location: "Indragiri Hilir, Riau, Indonesia",
         // Form action - gunakan Formspree, Getform, dll untuk handling form
         // Daftar gratis di https://formspree.io lalu ganti link di bawah
@@ -182,10 +176,8 @@ const DATA = {
 
     // ===== SOCIAL MEDIA =====
     socials: [
-        { icon: "fa-brands fa-github", url: "https://github.com/azhar85", label: "GitHub" },
-        { icon: "fa-brands fa-Threads", url: "https://threads.com/in/ahmadazhar", label: "Threads" },
+        { icon: "fa-brands fa-Threads", url: "https://threads.com/ahmadazhar", label: "Threads" },
         { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
-        { icon: "fa-brands fa-x", url: "https://x.com/ahmadazhar", label: "x" },
         { icon: "fa-brands fa-facebook", url: "https://facebook.com/azhar855", label: "Facebook" },
     ],
 
