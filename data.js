@@ -162,7 +162,7 @@ const DATA = {
                 "images/inhilapp4.png",
             ],
             tags: ["Nextjs", "Laravel", "MySql"],
-            liveUrl: "inhilapp.vercel.app",
+            liveUrl: "https://inhilapp.vercel.app",
         },
         {
             title: "Task Management App",
