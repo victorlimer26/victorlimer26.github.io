@@ -153,16 +153,16 @@ const DATA = {
     // Taruh gambar di folder images/ lalu isi path-nya
     projects: [
         {
-            title: "E-Commerce Platform",
+            title: "E-Commerce Pebjualan App Premium",
             description: "Platform e-commerce full-stack dengan fitur keranjang belanja, pembayaran, dan dashboard admin.",
             images: [
-                // "images/project1-1.jpg",
-                // "images/project1-2.jpg",
-                // "images/project1-3.jpg",
+                "images/inhilapp.png",
+                "images/inhilapp2.png",
+                "images/inhilapp3.png",
+                "images/inhilapp4.png",
             ],
-            tags: ["React", "Node.js", "MongoDB"],
-            liveUrl: "#",
-            githubUrl: "#",
+            tags: ["Nextjs", "Laravel", "MySql"],
+            liveUrl: "inhilapp.vercel.app",
         },
         {
             title: "Task Management App",
@@ -222,11 +222,10 @@ const DATA = {
 
     // ===== SOCIAL MEDIA =====
     socials: [
-        { icon: "fa-brands fa-github", url: "https://github.com/ahmadazhar", label: "GitHub" },
-        { icon: "fa-brands fa-linkedin-in", url: "https://linkedin.com/in/ahmadazhar", label: "LinkedIn" },
-        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
-        { icon: "fa-brands fa-twitter", url: "https://twitter.com/ahmadazhar", label: "Twitter" },
-        { icon: "fa-brands fa-dribbble", url: "https://dribbble.com/ahmadazhar", label: "Dribbble" },
+        { icon: "fa-brands fa-github", url: "https://github.com/azhar85", label: "GitHub" },
+        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmdzhaar", label: "Instagram" },
+        { icon: "fa-brands fa-x", url: "https://x.com/ahmdzhaar", label: "x" },
+        { icon: "fa-brands fa-threads", url: "https://threads.net/ahmdzhaar", label: "Threads" },
     ],
 
     // ===== FOOTER =====
