@@ -258,6 +258,8 @@ img { display: block; max-width: 100%; }
 .about-info-item i {
     color: var(--primary); font-size: 0.85rem; width: 16px; text-align: center;
 }
+.about-info-item .info-label { color: var(--text-sub); margin-right: 2px; }
+.about-info-item .info-label::after { content: ':'; }
 .about-info-item .info-val { color: var(--text); font-weight: 500; }
 
 /* ─── BUSINESS ─── */
@@ -711,6 +713,7 @@ function render(){
                     <div class="about-info-list">
                         ${aboutInfo.map((i,idx)=>`<div class="about-info-item">
                             <i class="${aboutIcons[idx]||'fa-solid fa-circle-info'}"></i>
+                            <span class="info-label">${esc(i.label)}</span>
                             <span class="info-val">${esc(i.value)}</span>
                         </div>`).join('')}
                     </div>
