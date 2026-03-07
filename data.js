@@ -7,7 +7,6 @@
    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
 
    EDIT SEMUA DATA PORTFOLIO ANDA DI FILE INI!
-   - Ganti teks, link, dan gambar sesuai kebutuhan
    - Taruh gambar di folder /images/
    - Untuk gambar, cukup tulis: images/nama-file.jpg
    ========================================================== */
