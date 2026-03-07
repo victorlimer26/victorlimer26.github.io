@@ -76,21 +76,6 @@ const DATA = {
             ]
         },
         {
-            logo: "images/foto.png",                // taruh: images/logo-brand2.png
-            icon: "fa-solid fa-mug-hot",
-            title: "Kopi Azhar",
-            igHandle: "@kopi.azhar",
-            instagram: "https://instagram.com/kopi.azhar",
-            description: "Kopi specialty roasted fresh dengan biji pilihan dari berbagai daerah di Indonesia.",
-            price: "Mulai dari Rp 35.0",
-            features: [
-                "Single Origin",
-                "Fresh Roasted",
-                "Gratis Ongkir min. 3 pack",
-                "Packaging Eksklusif"
-            ]
-        },
-        {
             logo: "",                // taruh: images/logo-brand3.png
             icon: "fa-solid fa-laptop-code",
             title: "Azhar Digital",
@@ -152,7 +137,7 @@ const DATA = {
     // Taruh gambar di folder images/ lalu isi path-nya
     projects: [
         {
-            title: "E-Commerce InhilApp",
+            title: "INHILAPP",
             description: "Platform e-commerce penjualan app premium dengan fitur keranjang belanja, pembayaran, dan dashboard admin.",
             // longDescription: penjelasan detail project (opsional, tampil di halaman detail)
             longDescription: "Platform e-commerce full-stack dengan fitur keranjang belanja, pembayaran online terintegrasi, dashboard admin untuk manajemen produk, dan tracking order real-time. Dibangun dengan React untuk frontend yang responsif, Node.js untuk backend yang scalable, dan MongoDB untuk penyimpanan data yang fleksibel. Project ini mendukung multi-payment gateway, notifikasi email otomatis, dan sistem review produk.",
@@ -160,50 +145,26 @@ const DATA = {
                 "images/inhilapp.png"
                 "images/Blue Modern Mobile Application Presentation.png",
             ],
-            tags: ["React", "Node.js", "MongoDB"],
+            tags: ["nextjs", "laravel", "MySql"],
             liveUrl: "https://inhilapp.vercel.app",
             githubUrl: "#",
         },
         {
-            title: "Task Management App",
-            description: "Aplikasi manajemen tugas dengan fitur drag & drop, kolaborasi tim, dan real-time updates.",
+            title: "THEJUBEL",
+            description: "Website penjualan akun mobile legends dengan fitur payment gateway, notifikasi whatsapp, realtime, otomatis. dan menggunakan fitur admin yang lengkap dengan tools edit poster.",
             images: [
-                // "images/project2-1.jpg",
-                // "images/project2-2.jpg",
+                "images/project2-1.jpg",
+                "images/project2-2.jpg",
             ],
-            tags: ["Vue.js", "Firebase", "Tailwind"],
-            liveUrl: "#",
+            tags: ["Laravel 12", "Inertia react", "payment gateway", "MySql"],
+            liveUrl: "https://thejubel.com",
             githubUrl: "#",
         },
         {
-            title: "Portfolio Generator",
-            description: "Tool untuk membuat portfolio website secara otomatis dari file konfigurasi JSON.",
+            title: "BAKERIA",
+            description: "Aplikasi POS lengkap dengan login staff dan admin",
             images: [],
-            tags: ["JavaScript", "HTML", "CSS"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
-        {
-            title: "Weather Dashboard",
-            description: "Dashboard cuaca real-time dengan visualisasi data, prakiraan 7 hari, dan lokasi GPS.",
-            images: [],
-            tags: ["React", "API", "Chart.js"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
-        {
-            title: "Chat Application",
-            description: "Aplikasi chat real-time dengan WebSocket, kirim gambar, dan group chat.",
-            images: [],
-            tags: ["Socket.io", "Express", "React"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
-        {
-            title: "Blog CMS",
-            description: "Content Management System untuk blog dengan editor markdown dan manajemen kategori.",
-            images: [],
-            tags: ["Laravel", "MySQL", "Vue.js"],
+            tags: ["Flutter", "Firebase"],
             liveUrl: "#",
             githubUrl: "#",
         },
@@ -213,7 +174,7 @@ const DATA = {
     contact: {
         description: "Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi!",
         email: "ahmadazhar855@gmail.com",
-        phone: "+6282279082064",
+        whatsapp: "+6282279082064",
         location: "Indragiri Hilir, Riau, Indonesia",
         // Form action - gunakan Formspree, Getform, dll untuk handling form
         // Daftar gratis di https://formspree.io lalu ganti link di bawah
@@ -222,11 +183,11 @@ const DATA = {
 
     // ===== SOCIAL MEDIA =====
     socials: [
-        { icon: "fa-brands fa-github", url: "https://github.com/ahmadazhar", label: "GitHub" },
-        { icon: "fa-brands fa-linkedin-in", url: "https://linkedin.com/in/ahmadazhar", label: "LinkedIn" },
+        { icon: "fa-brands fa-github", url: "https://github.com/azhar85", label: "GitHub" },
+        { icon: "fa-brands fa-Threads", url: "https://threads.com/in/ahmadazhar", label: "Threads" },
         { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
-        { icon: "fa-brands fa-twitter", url: "https://twitter.com/ahmadazhar", label: "Twitter" },
-        { icon: "fa-brands fa-dribbble", url: "https://dribbble.com/ahmadazhar", label: "Dribbble" },
+        { icon: "fa-brands fa-x", url: "https://x.com/ahmadazhar", label: "x" },
+        { icon: "fa-brands fa-facebook", url: "https://facebook.com/azhar855", label: "Facebook" },
     ],
 
     // ===== FOOTER =====
