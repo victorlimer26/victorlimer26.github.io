@@ -203,11 +203,12 @@ function MemberRow({
 }) {
   const isActive = hoveredId === member.id;
   const isDimmed = hoveredId !== null && !isActive;
-  const hasSocial =
-    member.social?.twitter ??
-    member.social?.linkedin ??
-    member.social?.instagram ??
-    member.social?.behance;
+  const hasSocial = !!(
+    member.social?.twitter ||
+    member.social?.linkedin ||
+    member.social?.instagram ||
+    member.social?.behance
+  );
 
   return (
     <div
