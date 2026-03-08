@@ -4,10 +4,10 @@ Portfolio website modern yang di-hosting di GitHub Pages.
 
 ## 🚀 Deploy ke GitHub Pages
 
-1. Push repository ini ke GitHub
+1. Push repository ini ke GitHub (branch `main`)
 2. Buka **Settings** → **Pages**
-3. Pilih **Branch: main** → **/ (root)** → **Save**
-4. Website akan live di `https://username.github.io/nama-repo`
+3. Pada **Build and deployment**, pilih **Source: GitHub Actions**
+4. Workflow `Deploy to GitHub Pages` akan build otomatis dan publish website
 
 ## ✏️ Cara Edit Data
 
