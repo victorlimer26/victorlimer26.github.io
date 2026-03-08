@@ -146,8 +146,8 @@ const DATA = {
             title: "THEJUBEL",
             description: "Website penjualan akun mobile legends dengan fitur payment gateway, notifikasi whatsapp, realtime, otomatis. dan menggunakan fitur admin yang lengkap dengan tools edit poster.",
             images: [
-                "images/project2-1.jpg",
-                "images/project2-2.jpg",
+                "images/thejubel.webp",
+                "images/thejubel2.webp",
             ],
             tags: ["Laravel 12", "Inertia react", "payment gateway", "MySql"],
             liveUrl: "https://thejubel.com",
@@ -177,7 +177,7 @@ const DATA = {
     // ===== SOCIAL MEDIA =====
     socials: [
         { icon: "fa-brands fa-threads", url: "https://threads.com/@ahmdzhaar", label: "Threads" },
-        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
+        { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmdzhaar", label: "Instagram" },
         { icon: "fa-brands fa-facebook", url: "https://facebook.com/azhar855", label: "Facebook" },
     ],
 
