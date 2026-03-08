@@ -62,7 +62,6 @@ const DATA = {
             igHandle: "@thejubel_ml",
             instagram: "https://instagram.com/thejubel_ml",
             description: "Spesialis Akun MLBB",
-            price: "Mulai dari Rp 150.000",
             features: [
                 "Jual Akun",
                 "Beli Akun"
@@ -75,7 +74,6 @@ const DATA = {
             igHandle: "@azhar.digital",
             instagram: "https://instagram.com/azhar.digital",
             description: "Jasa pembuatan website, desain grafis, dan solusi digital untuk UMKM.",
-            price: "Mulai dari Rp 500.000",
             features: [
                 "Website & Landing Page",
                 "Desain Logo & Branding",
