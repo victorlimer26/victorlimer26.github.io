@@ -167,7 +167,7 @@ const DATA = {
     contact: {
         description: "Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi!",
         email: "ahmadazhar855@gmail.com",
-        whatsapp: "082279082064",
+        phone: "082279082064",
         location: "Indragiri Hilir, Riau, Indonesia",
         // Form action - gunakan Formspree, Getform, dll untuk handling form
         // Daftar gratis di https://formspree.io lalu ganti link di bawah
