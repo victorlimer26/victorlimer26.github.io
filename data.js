@@ -176,7 +176,7 @@ const DATA = {
 
     // ===== SOCIAL MEDIA =====
     socials: [
-        { icon: "fa-brands fa-Threads", url: "https://threads.com/ahmadazhar", label: "Threads" },
+        { icon: "fa-brands fa-threads", url: "https://threads.com/@ahmdzhaar", label: "Threads" },
         { icon: "fa-brands fa-instagram", url: "https://instagram.com/ahmadazhar", label: "Instagram" },
         { icon: "fa-brands fa-facebook", url: "https://facebook.com/azhar855", label: "Facebook" },
     ],
@@ -200,10 +200,6 @@ const DATA = {
             "When I'm not coding, I'm usually exploring new technologies, writing tech articles, or enjoying a cup of coffee while brainstorming ideas for my next project."
         ],
         aboutInfo: [
-            { label: "Name", value: "Ahmad Azhar" },
-            { label: "Location", value: "Indonesia" },
-            { label: "Email", value: "ahmadazhar855@gmail.com" },
-            { label: "Status", value: "Freelancer" },
         ],
         businessSubtitle: "Businesses I manage and develop on Instagram.",
         contactDescription: "Have an interesting project or want to collaborate? Don't hesitate to reach out. I'm always open for discussion!",
