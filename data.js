@@ -115,7 +115,9 @@ const DATA = {
                 { name: "PHP", icon: "fa-brands fa-php" },
                 { name: "Laravel", icon: "fa-brands fa-laravel" },
                 { name: "Express.js", icon: "fa-brands fa-node" },
+                { name: "MySql", icon: "fa-solid fa-database" },
                 { name: "PostgreSQL", icon: "fa-solid fa-database" },
+                { name: "Firebase", icon: "fa-solid fa-database" },
             ]
         },
         {
@@ -124,9 +126,6 @@ const DATA = {
             skills: [
                 { name: "Git", icon: "fa-brands fa-git-alt" },
                 { name: "Docker", icon: "fa-brands fa-docker" },
-                { name: "Figma", icon: "fa-brands fa-figma" },
-                { name: "Linux", icon: "fa-brands fa-linux" },
-                { name: "AWS", icon: "fa-brands fa-aws" },
                 { name: "Firebase", icon: "fa-solid fa-fire" },
             ]
         },
