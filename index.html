@@ -333,55 +333,58 @@ img { display: block; max-width: 100%; }
 .skill-tag:hover { border-color: var(--primary); color: var(--primary); background: rgba(251,252,5,0.06); transform: translateY(-1px); }
 
 /* ─── PROJECTS ─── */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
 .project-card {
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-    overflow: hidden; transition: border-color 0.3s, transform 0.3s;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+    overflow: hidden; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; position: relative;
 }
-.project-card:hover { border-color: rgba(251,252,5,0.4); transform: translateY(-6px); box-shadow: var(--card-hover-shadow); }
+.project-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--primary), rgba(251,252,5,0.3), var(--primary));
+    opacity: 0; transition: opacity 0.3s; z-index: 2;
+}
+.project-card:hover { border-color: rgba(251,252,5,0.3); transform: translateY(-6px); box-shadow: var(--card-hover-shadow); }
+.project-card:hover::before { opacity: 1; }
 .project-thumb {
-    height: 210px; background: var(--bg-input); overflow: hidden; position: relative;
+    height: 220px; background: var(--bg-input); overflow: hidden; position: relative;
     display: flex; align-items: center; justify-content: center;
     font-size: 2.5rem; color: #444;
 }
-.project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-.project-card:hover .project-thumb img { transform: scale(1.06); }
+.project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.project-card:hover .project-thumb img { transform: scale(1.08); }
 .project-count {
     position: absolute; bottom: 10px; right: 10px;
-    background: rgba(0,0,0,0.8); color: var(--primary);
+    background: rgba(0,0,0,0.75); color: var(--primary);
     font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 6px;
     display: flex; align-items: center; gap: 4px; backdrop-filter: blur(4px);
 }
-.project-overlay {
-    position: absolute; inset: 0; background: rgba(0,0,0,0.5);
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    opacity: 0; transition: 0.3s;
-}
-.project-card:hover .project-overlay { opacity: 1; }
-.project-overlay a, .project-overlay button {
-    padding: 10px 20px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;
-    cursor: pointer; font-family: inherit; border: none; transition: 0.2s;
-    display: inline-flex; align-items: center; gap: 6px;
-}
-.project-overlay .prim { background: var(--primary); color: var(--bg); }
-.project-overlay .prim:hover { transform: translateY(-1px); }
-.project-overlay .ghost { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); color: #fff; backdrop-filter: blur(4px); }
-.project-overlay .ghost:hover { background: rgba(255,255,255,0.2); }
-.project-body { padding: 22px; }
-.project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.project-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .project-tag {
     font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 100px;
     background: rgba(251,252,5,0.08); color: var(--primary); border: 1px solid rgba(251,252,5,0.12);
 }
-.project-body h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
-.project-body p { color: var(--text-sub); font-size: 0.85rem; line-height: 1.6; }
-.project-live {
-    display: inline-flex; align-items: center; gap: 6px;
-    margin-top: 14px; font-size: 0.82rem; font-weight: 600; color: var(--primary);
-    transition: 0.2s; cursor: pointer; background: none; border: none;
-    font-family: inherit; padding: 0;
+.project-body h3 { font-size: 1.1rem; font-weight: 700; }
+.project-body p { color: var(--text-sub); font-size: 0.85rem; line-height: 1.65; }
+.project-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 16px; border-top: 1px solid var(--border); margin-top: 4px;
 }
-.project-live:hover { opacity: 0.7; }
+.project-view-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 0.82rem; font-weight: 600; color: var(--bg);
+    background: var(--primary); padding: 8px 18px; border-radius: 8px;
+    border: none; cursor: pointer; font-family: inherit; transition: 0.2s;
+}
+.project-view-btn:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(251,252,5,0.25); }
+.project-live-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.72rem; font-weight: 500; color: var(--text-sub);
+    padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border);
+    transition: 0.2s;
+}
+.project-live-badge:hover { border-color: var(--primary); color: var(--primary); }
 
 /* ─── PROJECT DETAIL ─── */
 .project-detail {
@@ -692,7 +695,7 @@ function render(){
                 <p class="hero-greeting">${lang==='en'?'Hello, I\'m':'Halo, perkenalkan'}</p>
                 <h1 class="hero-name"><span>${esc(DATA.name)}</span></h1>
                 <p class="hero-tagline">${esc((lang==='en'&&DATA.en?.tagline)||DATA.tagline)}</p>
-                <div class="hero-status"><span class="hero-status-dot"></span> ${lang==='en'?'Available for hire':'Tersedia untuk project'}</div>
+                
                 <p class="hero-desc">${esc((lang==='en'&&DATA.en?.heroDescription)||DATA.heroDescription)}</p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> ${t('contactBtn')}</a>
@@ -709,7 +712,7 @@ function render(){
     const ap = safeImg(DATA.about.photo);
     const aboutImg = ap ? `<img src="${esc(ap)}" alt="${esc(DATA.name)}">` : `<i class="fa-solid fa-image"></i>`;
     const aboutParas = (lang==='en'&&DATA.en?.aboutParagraphs)||DATA.about.paragraphs;
-    const aboutInfo = (lang==='en'&&DATA.en?.aboutInfo)||DATA.about.info;
+    const aboutInfo = (lang==='en'&&DATA.en?.aboutInfo)||DATA.about.info||[];
     const aboutIcons = ['fa-solid fa-user','fa-solid fa-location-dot','fa-solid fa-envelope','fa-solid fa-briefcase'];
     document.getElementById('about-c').innerHTML = `
         <div class="section-label fade">${t('aboutLabel')}</div>
@@ -785,20 +788,19 @@ function render(){
                 const imgs=(p.images||(p.image?[p.image]:[])).map(safeImg).filter(Boolean);
                 const first=imgs.length?imgs[0]:'';
                 const thumb=first?`<img src="${esc(first)}" alt="${esc(p.title)}" loading="lazy">`:`<i class="fa-solid fa-folder-open"></i>`;
-                return `<div class="project-card fade">
+                return `<div class="project-card fade" onclick="openPD(${i})">
                     <div class="project-thumb">
                         ${thumb}
                         ${imgs.length>1?`<div class="project-count"><i class="fa-solid fa-images"></i> ${imgs.length}</div>`:''}
-                        <div class="project-overlay">
-                            ${imgs.length?`<button class="prim" onclick="openLB(${i},0)"><i class="fa-solid fa-expand"></i> View</button>`:''}
-                            ${p.liveUrl&&p.liveUrl!=='#'?`<a href="${safeURL(p.liveUrl)}" target="_blank" rel="noopener noreferrer" class="prim"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>`:''}
-                        </div>
                     </div>
                     <div class="project-body">
                         <div class="project-tags">${p.tags.map(tg=>`<span class="project-tag">${esc(tg)}</span>`).join('')}</div>
                         <h3>${esc(p.title)}</h3>
                         <p>${esc(p.description)}</p>
-                        <button class="project-live" onclick="openPD(${i})"><i class="fa-solid fa-folder-open"></i> ${lang==='en'?'View Project':'Lihat Project'}</button>
+                        <div class="project-footer">
+                            <button class="project-view-btn"><i class="fa-solid fa-arrow-right"></i> ${lang==='en'?'View Project':'Lihat Project'}</button>
+                            ${p.liveUrl&&p.liveUrl!=='#'?`<span class="project-live-badge"><i class="fa-solid fa-circle" style="font-size:5px;color:#22c55e"></i> Live</span>`:''}
+                        </div>
                     </div>
                 </div>`;
             }).join('')}

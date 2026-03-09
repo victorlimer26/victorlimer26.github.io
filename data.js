@@ -21,7 +21,7 @@ const DATA = {
 
     // Foto profil hero (taruh file di folder images/)
     // Kosongkan "" jika belum ada foto, akan tampil icon default
-    heroPhoto: "images/IMG_0809.jpeg",
+    heroPhoto: "images/azhar1.webp",
 
     // ===== HERO STATISTICS =====
     stats: [
@@ -42,11 +42,11 @@ const DATA = {
     // ===== ABOUT =====
     about: {
         // Foto about (taruh file di folder images/)
-        photo: "images/image.png",
+        photo: "images/azhar1.webp",
         paragraphs: [
-            "Halo! Saya Ahmad Azhar, seorang Full-Stack Developer yang berbasis di Indonesia. Saya memiliki pengalaman lebih dari 3 tahun dalam mengembangkan aplikasi web dan mobile yang modern dan scalable.",
-            "Saya percaya bahwa teknologi terbaik adalah yang tidak terlihat — yang bekerja dengan mulus dan memberikan pengalaman terbaik bagi penggunanya. Itulah mengapa saya selalu mengutamakan clean code, performa optimal, dan desain yang intuitif.",
-            "Ketika tidak coding, saya biasanya exploring teknologi baru, menulis artikel tech, atau menikmati secangkir kopi sambil brainstorming ide project berikutnya."
+            "Halo! Saya Ahmad Azhar, seorang Full-Stack Developer yang berbasis di Indragiri Hilir, Riau, Indonesia. Saya berfokus pada pengembangan aplikasi web fullstack menggunakan Laravel, Laravel Inertia, dan Next.js.",
+            "Saya telah membangun beberapa project nyata seperti INHILAPP (platform e-commerce penjualan app premium), THEJUBEL (website jual beli akun Mobile Legends dengan payment gateway otomatis), dan BAKERIA (aplikasi POS lengkap berbasis Flutter & Firebase).",
+            "Selain developer, saya juga menjalankan bisnis di bidang digital — THEJUBEL untuk jual beli akun MLBB dan INHILCARGO untuk jasa angkutan barang di daerah Tembilahan. Saya selalu terbuka untuk project baru dan kolaborasi."
         ],
     },
 
@@ -56,7 +56,7 @@ const DATA = {
 
     businesses: [
         {
-            logo: "images/image.png",                // taruh: images/logo-brand1.png
+            logo: "images/logothejubel.webp",                // taruh: images/logo-brand1.png
             icon: "fa-solid fa-shirt",  // icon fallback jika logo kosong
             title: "THEJUBEL",
             igHandle: "@thejubel_ml",
@@ -68,23 +68,32 @@ const DATA = {
             ]
         },
         {
-            logo: "",                // taruh: images/logo-brand3.png
+            logo: "images/logoinhilcargo.webp",                // taruh: images/logo-brand3.png
             icon: "fa-solid fa-laptop-code",
-            title: "Azhar Digital",
-            igHandle: "@azhar.digital",
-            instagram: "https://instagram.com/azhar.digital",
-            description: "Jasa pembuatan website, desain grafis, dan solusi digital untuk UMKM.",
+            title: "INHILCARGO",
+            igHandle: "@inhilcargo",
+            instagram: "https://instagram.com/inhilcargo",
+            description: "Jasa angkutan dan kirim barang daerah tembilahan",
             features: [
-                "Website & Landing Page",
-                "Desain Logo & Branding",
-                "Social Media Management",
-                "Konsultasi Gratis"
+                "Angkutan Barang",
+                "Armada pickup",
+                "Viar",
+                "Kirim barang"
             ]
         },
     ],
 
     // ===== SKILLS =====
     skillCategories: [
+        {
+            title: "Fullstack",
+            icon: "fa-solid fa-layer-group",
+            skills: [
+                { name: "Laravel", icon: "fa-brands fa-laravel" },
+                { name: "Laravel Inertia", icon: "fa-brands fa-laravel" },
+                { name: "Next.js", icon: "fa-brands fa-react" },
+            ]
+        },
         {
             title: "Frontend",
             icon: "fa-solid fa-laptop-code",
@@ -196,9 +205,9 @@ const DATA = {
             { number: "25+", label: "Projects Done" },
         ],
         aboutParagraphs: [
-            "Hello! I'm Ahmad Azhar, a Full-Stack Developer based in Indonesia. I have over 3 years of experience in developing modern and scalable web and mobile applications.",
-            "I believe the best technology is invisible - it works seamlessly and delivers the best experience for its users. That's why I always prioritize clean code, optimal performance, and intuitive design.",
-            "When I'm not coding, I'm usually exploring new technologies, writing tech articles, or enjoying a cup of coffee while brainstorming ideas for my next project."
+            "Hello! I'm Ahmad Azhar, a Full-Stack Developer based in Indragiri Hilir, Riau, Indonesia. I specialize in building fullstack web applications using Laravel, Laravel Inertia, and Next.js.",
+            "I have built several real-world projects such as INHILAPP (a premium app e-commerce platform), THEJUBEL (a Mobile Legends account marketplace with automated payment gateway), and BAKERIA (a complete POS application built with Flutter & Firebase).",
+            "Besides being a developer, I also run businesses in the digital space — THEJUBEL for MLBB account trading and INHILCARGO for freight services in the Tembilahan area. I'm always open for new projects and collaborations."
         ],
         aboutInfo: [
         ],
