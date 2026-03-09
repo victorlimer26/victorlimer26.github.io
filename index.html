@@ -641,6 +641,12 @@ img { display: block; max-width: 100%; }
 function esc(s){ const d=document.createElement('div'); d.appendChild(document.createTextNode(s)); return d.innerHTML; }
 function safeURL(u){ if(!u)return '#'; const t=u.trim(); return /^(https?:|mailto:|tel:|#)/.test(t)?encodeURI(t):'#'; }
 function safeImg(p){ if(!p)return ''; const t=p.trim(); return /^images\/[\w\-. ]+\.(jpg|jpeg|png|gif|webp|svg|avif)$/i.test(t)?t:''; }
+function normalizeWhatsAppNumber(v){
+    if(!v)return '';
+    let n=String(v).replace(/\D/g,'');
+    if(n.startsWith('0')) n='62'+n.slice(1);
+    return n;
+}
 
 /* ── Language ── */
 let lang='id';
@@ -809,6 +815,9 @@ function render(){
     // Contact
     const fa = safeURL(DATA.contact.formAction);
     const contactDesc = (lang==='en'&&DATA.en?.contactDescription)||DATA.contact.description;
+    const waRaw = DATA.contact.whatsapp || DATA.contact.phone || '';
+    const waNum = normalizeWhatsAppNumber(waRaw);
+    const waHref = waNum ? `https://wa.me/${waNum}` : '#';
     document.getElementById('contact-c').innerHTML = `
         <div class="section-label fade">${t('contactLabel')}</div>
         <h2 class="section-title fade">${t('contactTitle')}</h2>
@@ -821,8 +830,8 @@ function render(){
                         <div><h4>Email</h4><a href="mailto:${esc(DATA.contact.email)}">${esc(DATA.contact.email)}</a></div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div><h4>Phone</h4><a href="tel:${esc(DATA.contact.phone)}">${esc(DATA.contact.phone)}</a></div>
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div><h4>WhatsApp</h4><a href="${esc(waHref)}" target="_blank" rel="noopener noreferrer">${esc(waRaw)}</a></div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
