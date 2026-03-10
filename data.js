@@ -1,10 +1,10 @@
-/* ==========================================================
-   ██████╗  █████╗ ████████╗ █████╗
-   ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗
-   ██║  ██║███████║   ██║   ███████║
-   ██║  ██║██╔══██║   ██║   ██╔══██║
-   ██████╔╝██║  ██║   ██║   ██║  ██║
-   ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+﻿/* ==========================================================
+   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—
+   â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â•šâ•â•â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—
+   â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘
+   â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘
+   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘
+   â•šâ•â•â•â•â•â• â•šâ•â•  â•šâ•â•   â•šâ•â•   â•šâ•â•  â•šâ•â•
 
    EDIT SEMUA DATA PORTFOLIO ANDA DI FILE INI!
    - Taruh gambar di folder /images/
@@ -17,7 +17,7 @@ const DATA = {
     name: "Ahmad Azhar",
     logo: "Ahmad Azhar",
     tagline: "Full-Stack Developer & UI/UX Designer",
-    heroDescription: "Saya adalah seorang developer yang passionate dalam menciptakan pengalaman digital yang luar biasa. Fokus pada kode yang bersih, desain yang elegan, dan solusi yang inovatif.",
+    heroDescription: "Saya membangun solusi digital end-to-end dengan fokus pada fungsionalitas, pengalaman pengguna, dan kualitas implementasi yang berkelanjutan.",
 
     // Foto profil hero (taruh file di folder images/)
     // Kosongkan "" jika belum ada foto, akan tampil icon default
@@ -44,9 +44,9 @@ const DATA = {
         // Foto about (taruh file di folder images/)
         photo: "images/azhar1.webp",
         paragraphs: [
-            "Halo! Saya Ahmad Azhar, seorang Full-Stack Developer yang berbasis di Indragiri Hilir, Riau, Indonesia. Saya berfokus pada pengembangan aplikasi web fullstack menggunakan Laravel, Laravel Inertia, dan Next.js.",
-            "Saya telah membangun beberapa project nyata seperti INHILAPP (platform e-commerce penjualan app premium), THEJUBEL (website jual beli akun Mobile Legends dengan payment gateway otomatis), dan BAKERIA (aplikasi POS lengkap berbasis Flutter & Firebase).",
-            "Selain developer, saya juga menjalankan bisnis di bidang digital — THEJUBEL untuk jual beli akun MLBB dan INHILCARGO untuk jasa angkutan barang di daerah Tembilahan. Saya selalu terbuka untuk project baru dan kolaborasi."
+            "Halo! Saya Ahmad Azhar, seorang Full-Stack Developer yang berbasis di Indragiri Hilir, Riau, Indonesia. Saya berfokus membangun solusi digital yang fungsional, mudah digunakan, dan berdampak nyata untuk pengguna.",
+            "Saya terbiasa mengerjakan pengembangan aplikasi dari awal hingga siap digunakan, mulai dari perencanaan fitur, pembuatan antarmuka, pengembangan backend, integrasi database, hingga proses deployment dan perawatan sistem.",
+            "Dalam bekerja, saya mengutamakan kode yang bersih, pengalaman pengguna yang baik, komunikasi yang jelas, serta peningkatan berkelanjutan. Saya terbuka untuk kolaborasi pada berbagai kebutuhan pengembangan web dan produk digital."
         ],
     },
 
@@ -198,15 +198,15 @@ const DATA = {
     // Hapus field jika tidak perlu diterjemahkan
     en: {
         tagline: "Full-Stack Developer & UI/UX Designer",
-        heroDescription: "I am a developer passionate about creating extraordinary digital experiences. Focused on clean code, elegant design, and innovative solutions.",
+        heroDescription: "I build end-to-end digital solutions with a focus on functionality, user experience, and sustainable implementation quality.",
         stats: [
             { number: "3+", label: "Years Experience" },
             { number: "25+", label: "Projects Done" },
         ],
         aboutParagraphs: [
-            "Hello! I'm Ahmad Azhar, a Full-Stack Developer based in Indragiri Hilir, Riau, Indonesia. I specialize in building fullstack web applications using Laravel, Laravel Inertia, and Next.js.",
-            "I have built several real-world projects such as INHILAPP (a premium app e-commerce platform), THEJUBEL (a Mobile Legends account marketplace with automated payment gateway), and BAKERIA (a complete POS application built with Flutter & Firebase).",
-            "Besides being a developer, I also run businesses in the digital space — THEJUBEL for MLBB account trading and INHILCARGO for freight services in the Tembilahan area. I'm always open for new projects and collaborations."
+            "Hello! I'm Ahmad Azhar, a Full-Stack Developer based in Indragiri Hilir, Riau, Indonesia. I focus on building digital solutions that are functional, user-friendly, and meaningful for real users.",
+            "I am comfortable handling end-to-end development, from feature planning and UI implementation to backend development, database integration, deployment, and ongoing maintenance.",
+            "My work approach emphasizes clean code, strong user experience, clear communication, and continuous improvement. I'm open to collaborating on a wide range of web and digital product needs."
         ],
         aboutInfo: [
         ],
@@ -215,3 +215,4 @@ const DATA = {
         footerText: "Ahmad Azhar. All rights reserved.",
     },
 };
+
